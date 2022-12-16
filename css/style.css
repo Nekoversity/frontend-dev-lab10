@@ -1,0 +1,63 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+#main {
+    width: 600px;
+    margin: 25px auto 0 auto;
+    border: 1px solid black;
+    text-align: center;
+    font-family: 'Tahoma', sans-serif;
+    padding: 10px 0;
+}
+
+#name {
+    font-size: 1.5em;
+    margin-bottom: 3px;
+}
+
+#try-text {
+    font-size: 1.1em;
+}
+
+#slots {
+    display: inline-flex;
+    margin: 10px auto 0 auto;
+    flex-direction: row;
+}
+
+#slots > div{
+    font-size: 3em;
+    border: 1px solid black;
+}
+
+#start {
+    display: block;
+    color: white;
+    font-size: 1.2em;
+    background: cornflowerblue;
+    margin: 10px auto;
+    min-width: 100px;
+    height: 30px;
+    line-height: 1.2em;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+#start:disabled {
+    background: gray;
+    color: black;
+}
+
+#start:disabled:hover {
+    background: gray;
+    cursor: not-allowed;
+}
+
+#start:hover {
+    transition: background 0.3s ease;
+    background: darkblue;
+}
